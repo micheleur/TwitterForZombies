@@ -15,5 +15,20 @@
   <%= @zombie.age %>
 </p>
 
+<p>
+  <strong>Email:</strong>
+  <%= mail_to @zombie.email %>
+</p>
+
+<p>
+  <strong>Rotting:</strong>
+  <%= @zombie.rotting %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @zombie.sex %>
+</p>
+
 <%= link_to 'Edit', edit_zombie_path(@zombie) %> |
 <%= link_to 'Back', zombies_path %>

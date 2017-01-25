@@ -4,7 +4,7 @@ class ZombiesController < ApplicationController
   # GET /zombies
   # GET /zombies.json
   def index
-    @zombies = Zombie.all
+    @zombies = Zombie.includes(:brain).includes(:assignments).all #rotting
 
     respond_to do |format|
       format.html
