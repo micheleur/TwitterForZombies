@@ -36,7 +36,9 @@
     <%= label_tag(:sex_f, "F") %>
     <%= f.radio_button :sex, "m" %>
     <%= label_tag(:sex_m, "M") %>
-
+  </div>
+  <div class="field">
+    <%= f.select :roles, ['scout', 'captain', 'soldier', 'brain tester'] %>
   </div>
   <div class="actions">
     <%= f.submit %>
