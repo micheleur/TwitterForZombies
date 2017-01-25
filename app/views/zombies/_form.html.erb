@@ -23,6 +23,21 @@
     <%= f.label :age %><br>
     <%= f.number_field :age %>
   </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :rotting %><br>
+    <%= f.check_box :rotting %>
+  </div>
+  <div class="field">
+    <%= f.radio_button :sex, "f" %>
+    <%= label_tag(:sex_f, "F") %>
+    <%= f.radio_button :sex, "m" %>
+    <%= label_tag(:sex_m, "M") %>
+
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
